@@ -2,8 +2,10 @@ import scene from "./basic/Scene.js";
 import camera from "./basic/Camera.js";
 import renderer from "./basic/Renderer.js";
 import cube from "./basic/shapes/Cubo.js";
+import light from "./basic/Light.js";
 
 scene.add(cube);
+scene.add(light);
 
 camera.position.set(1, 1, 1);
 camera.lookAt(0, 0, 0);
