@@ -5,6 +5,7 @@ import cube from "./basic/shapes/Cubo.js";
 import light from "./basic/Light.js";
 import resize from "./basic/Resize.js";
 import plane from "./basic/shapes/Plane.js";
+import loopMachine from "./basic/LoopMachine.js";
 
 scene.add(cube);
 scene.add(light);
@@ -17,8 +18,10 @@ plane.position.set(-1, -1, -1);
 // renderer.render(scene, camera); // esto toma una imagen de la escena
 // console.log(scene, camera, renderer, cube);
 
-setInterval(() => {
+loopMachine.addCallback(() => {
   cube.rotation.y += 0.01; // esto esta en radianes y un radian = 180 grados, por eso se trabajara con decimas de readianes
   renderer.render(scene, camera);
-}, 1000 / 60);
+});
+
 resize.start(renderer);
+loopMachine.start();
