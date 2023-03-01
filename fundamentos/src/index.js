@@ -5,4 +5,8 @@ import cube from "./basic/shapes/Cubo.js";
 
 scene.add(cube);
 
-console.log(scene, camera, renderer);
+camera.position.set(1, 1, 1);
+camera.lookAt(0, 0, 0);
+
+renderer.render(scene, camera); // esto toma una imagen de la escena
+// console.log(scene, camera, renderer, cube);
