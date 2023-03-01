@@ -4,9 +4,11 @@ import renderer from "./basic/Renderer.js";
 import cube from "./basic/shapes/Cubo.js";
 import light from "./basic/Light.js";
 import resize from "./basic/Resize.js";
+import plane from "./basic/shapes/Plane.js";
 
 scene.add(cube);
 scene.add(light);
+scene.add(plane);
 
 camera.position.set(1, 1, 1);
 camera.lookAt(cube.position);
