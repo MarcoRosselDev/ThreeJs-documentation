@@ -10,8 +10,9 @@ scene.add(cube);
 scene.add(light);
 scene.add(plane);
 
-camera.position.set(1, 1, 1);
+camera.position.set(2, 2, 2);
 camera.lookAt(cube.position);
+plane.position.set(-1, -1, -1);
 
 // renderer.render(scene, camera); // esto toma una imagen de la escena
 // console.log(scene, camera, renderer, cube);
