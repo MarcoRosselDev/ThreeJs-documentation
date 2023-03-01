@@ -1,5 +1,8 @@
 import scene from "./basic/Scene.js";
 import camera from "./basic/Camera.js";
 import renderer from "./basic/Renderer.js";
+import cube from "./basic/shapes/Cubo.js";
 
-console.log(scene, camera);
+scene.add(cube);
+
+console.log(scene, camera, renderer);
